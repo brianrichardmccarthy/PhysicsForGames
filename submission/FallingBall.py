@@ -23,6 +23,6 @@ dt = 0.01
 
 # while the position of the ball on the y direction is greater than -12.5
 while ball.pos.y > -12.5:
-    rate(100)
+    rate(1000)
     ball.pos.y = 500-5*(t**2)
     t=t+dt

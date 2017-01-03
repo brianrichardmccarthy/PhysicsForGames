@@ -28,10 +28,11 @@ ball = sphere(pos=(1, l ,0), radius=0.5)
 
 # infinite loop
 while True:
-    rate(100)
+    rate(1000)
 
     # set the ball position x equal to (0.4)x(cos((omega)x(time)))+(0.125*(sin((omega)(t))))
     ball.pos.x = (0.4*(cos((omega*t)))) + (0.125*(sin(omega*t)))
     ball.pos.y = (l/2)*ball.pos.x**2
-    
+
+    #update time
     t+=dt

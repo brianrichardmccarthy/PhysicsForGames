@@ -20,8 +20,8 @@ dt = 0.01
 t = 0
 
 # while t is less than 5
-while t<5:
-    rate(100)
+while t<50:
+    rate(1000)
 
     # move the ball in a circle
     ball.pos = vector(5*cos(2*t), 5*sin(2*t), ball.pos.z+dt)
